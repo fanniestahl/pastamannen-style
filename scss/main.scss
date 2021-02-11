@@ -1,0 +1,16 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.no-border {
+    border: 0px !important;
+}
+
+
+@import "config";
+@import "navbar";
+@import "instagram";
+@import "info";
+@import "footer";

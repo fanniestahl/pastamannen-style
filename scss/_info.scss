@@ -1,0 +1,36 @@
+.info {
+    background-color: $lightyellow;
+    text-align: center;
+    padding: $smallpadding;
+
+    h1 {
+        margin: 0;
+        font-family: $marker;
+        font-weight: 400;
+    }
+
+    p {
+        font-family: $roboto;
+    }
+
+    &-dark {
+        background-color: $dark;
+        border-bottom: $border;
+
+        h1 {
+            color: $yellow;
+        }
+
+        p {
+            color: $lightyellow;
+        }
+
+        .info-imgs {
+            padding: $mediumpadding;
+        }
+
+        &:nth-last-child(1) {
+            border-bottom: none;
+        }
+    }
+}

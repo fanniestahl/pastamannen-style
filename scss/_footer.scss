@@ -1,0 +1,35 @@
+.footer {
+    border-top: $border;
+    background-color: $dark;
+    padding: $smallpadding $mediumpadding;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .footer-info {
+        h3 {
+            color: $yellow;
+            font-family: $marker;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        p {
+            font-family: $roboto;
+            margin: 0;
+            color: $lightyellow;
+        }
+    }
+
+    .socialmedia {
+        display: flex;
+        align-items: baseline;
+        margin-top: auto;
+
+        .icons {
+            color: $yellow;
+            font-size: 2rem;
+            padding: 2px;
+        }
+    }
+}

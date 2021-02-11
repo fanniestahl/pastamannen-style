@@ -1,0 +1,35 @@
+.navbar {
+    background-color: $dark;
+    display: flex;
+    border-bottom: $border;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+
+    &-brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        height: 50px;
+        padding: $smallpadding;
+    }
+
+    p {
+        font-family: $marker;
+        color: $yellow;
+        font-size: $navfontsize;
+    }
+
+    &-menu {
+        line-height: 0.225;
+        padding: $smallpadding;
+        text-align: center;
+    }
+}

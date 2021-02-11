@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.no-border {
+  border: 0px !important;
+}
+
+.navbar {
+  background-color: #231F20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #F7BA2D;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar img {
+  height: 50px;
+  padding: 1rem;
+}
+
+.navbar p {
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar-menu {
+  line-height: 0.225;
+  padding: 1rem;
+  text-align: center;
+}
+
+.instagram {
+  background-color: #231F20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.instagram h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-weight: 400;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.instagram-imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1rem;
+}
+
+.info {
+  background-color: #FFFEEC;
+  text-align: center;
+  padding: 1rem;
+}
+
+.info h1 {
+  margin: 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+}
+
+.info p {
+  font-family: "Roboto", sans-serif;
+}
+
+.info-dark {
+  background-color: #231F20;
+  border-bottom: 3px solid #F7BA2D;
+}
+
+.info-dark h1 {
+  color: #F7BA2D;
+}
+
+.info-dark p {
+  color: #FFFEEC;
+}
+
+.info-dark .info-imgs {
+  padding: 2rem;
+}
+
+.info-dark:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.footer {
+  border-top: 3px solid #F7BA2D;
+  background-color: #231F20;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.footer .footer-info h3 {
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer .footer-info p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #FFFEEC;
+}
+
+.footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: auto;
+}
+
+.footer .socialmedia .icons {
+  color: #F7BA2D;
+  font-size: 2rem;
+  padding: 2px;
+}
