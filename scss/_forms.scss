@@ -1,0 +1,40 @@
+.header {
+    text-align: center;
+    padding: $mediumpadding;
+
+    h1 {
+        font-family: $marker;
+        color: $yellow;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    p {
+        color: $lightyellow;
+        font-family: $roboto;
+        margin: 0;
+    }
+}
+
+.form-group {
+    font-family: $roboto;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: $lightyellow;
+    }
+
+    .form-control {
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        background-color: $lightyellow;
+
+    }
+
+
+    small {
+        color: red;
+    }
+}

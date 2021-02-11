@@ -1,7 +1,10 @@
+@import "config";
+
 body,
 html {
     margin: 0;
     padding: 0;
+    background-color: $dark;
 }
 
 .no-border {
@@ -9,8 +12,8 @@ html {
 }
 
 
-@import "config";
 @import "navbar";
 @import "instagram";
 @import "info";
 @import "footer";
+@import "forms";

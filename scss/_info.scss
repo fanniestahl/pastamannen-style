@@ -26,7 +26,12 @@
         }
 
         .info-imgs {
-            padding: $mediumpadding;
+            display: flex;
+            justify-content: center;
+
+            img {
+                padding: $smallpadding;
+            }
         }
 
         &:nth-last-child(1) {
