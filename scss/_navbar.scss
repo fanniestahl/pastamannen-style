@@ -5,31 +5,70 @@
     height: 75px;
     align-items: center;
     justify-content: space-between;
+    padding-left: $mediumpadding;
+    padding-right: $mediumpadding;
 
     &-brand {
         display: flex;
         flex-direction: row;
         align-items: center;
+        p {
+            margin: 0px $smallpadding;
+            font-family: $marker;
+            color: $yellow;
+            font-size: $navfontsize;
+        }
     }
 
     a {
         text-decoration: none;
+        color: $yellow;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     img {
         height: 50px;
-        padding: $smallpadding;
     }
 
-    p {
-        font-family: $marker;
-        color: $yellow;
-        font-size: $navfontsize;
-    }
 
     &-menu {
         line-height: 0.225;
-        padding: $smallpadding;
         text-align: center;
+        text-decoration: none;
+
+        p {
+            font-family: $marker;
+            color: $yellow;
+            font-size: $navfontsize;
+        }
+
+        &:hover {
+            text-decoration: none !important;
+            color: darken($yellow, 20%) !important;
+        }
+
+    }
+
+    &-meny {
+        width: 300px;
+        border: $border;
+        display: grid;
+        background-color: $dark;
+        gap: $mediumpadding;
+        padding: $mediumpadding;
+
+        &-link {
+            text-decoration: none;
+            color: $yellow;
+            font-family: $marker;
+            text-align: center;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

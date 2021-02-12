@@ -15,9 +15,9 @@ html {
     border: 0px !important;
 }
 
-.no-border-right {
-    border-right: 0px !important;
-}
+// .no-border-right {
+    // border-right: 0px !important;
+// }
 
 
 @import "navbar";
@@ -30,4 +30,5 @@ html {
 @import "card";
 @import "landing";
 @import "contact";
+@import "meny";
 @import "responsive";

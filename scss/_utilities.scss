@@ -4,6 +4,10 @@
     width: 40%;
 }
 
+.center {
+    text-align: center;
+}
+
 .g-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,7 +38,17 @@
     font-weight: 400;
 }
 
+.subheader {
+    color: $lightyellow;
+    font-family: $roboto;
+    font-weight: 400;
+}
+
 .expand {
     grid-column: 1/-1;
     border-top: none;
+}
+
+.mb-small {
+    margin-bottom: $smallpadding;
 }

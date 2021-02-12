@@ -1,20 +1,3 @@
-.header {
-    text-align: center;
-    padding: $mediumpadding;
-
-    h1 {
-        font-family: $marker;
-        color: $yellow;
-        margin: 0;
-        font-weight: 400;
-    }
-
-    p {
-        color: $lightyellow;
-        font-family: $roboto;
-        margin: 0;
-    }
-}
 
 .form-group {
     font-family: $roboto;
@@ -48,6 +31,7 @@
     }
 
 }
+
 
 .stars-form {
     background-color: $lightyellow;
