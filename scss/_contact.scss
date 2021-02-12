@@ -1,0 +1,36 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: $mediumpadding;
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .contact-info {
+        padding-top: $mediumpadding;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+        .contact-info-group {
+            width: 200px;
+
+            h3 {
+                color: $yellow;
+                font-family: $marker;
+                margin: 0px;
+                font-weight: 400;
+            }
+
+            p {
+                font-family: $roboto;
+                margin: 0px;
+                color: $lightyellow;
+            }
+
+        }
+    }
+}

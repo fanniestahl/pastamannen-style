@@ -23,6 +23,7 @@
 
     label {
         color: $lightyellow;
+        padding-bottom: 3px;
     }
 
     .form-control {
@@ -30,11 +31,28 @@
         border: none;
         outline: none;
         background-color: $lightyellow;
+        height: 25px;
+        padding: 3px;
 
     }
 
+    textarea.form-control {
+        height: 80px;
+        resize: vertical;
+        max-height: 250px;
+    }
 
     small {
         color: red;
+        padding-top: 5px;
+    }
+
+}
+
+.stars-form {
+    background-color: $lightyellow;
+
+    &:hover {
+        background-color: $yellow;
     }
 }

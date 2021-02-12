@@ -1,0 +1,40 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.g-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $mediumpadding;
+}
+
+.hr-yellow {
+    border: none;
+    background-color: $yellow;
+    height: 1px;
+    margin-bottom: $smallpadding;
+    margin-top: $mediumpadding;
+}
+
+.stars {
+    .star-filled {
+        background-color: $yellow;
+    }
+
+    .star {
+        border: 1px solid $yellow;
+    }
+}
+
+.header {
+    color: $yellow;
+    font-family: $marker;
+    font-weight: 400;
+}
+
+.expand {
+    grid-column: 1/-1;
+    border-top: none;
+}

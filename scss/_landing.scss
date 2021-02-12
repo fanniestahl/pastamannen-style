@@ -1,0 +1,37 @@
+.landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .landing-item {
+        width: 100%;
+        background-color: $lightgrey;
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        border: $border;
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000000, 0.3);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 200px;
+                height: 200px;
+                margin-top: auto;
+            }
+
+            .btn {
+                font-family: $marker;
+                max-height: 30px;
+                border-radius: 3px;
+                padding: 5px 40px;
+                margin: $mediumpadding;
+            }
+        }
+    }
+
+}

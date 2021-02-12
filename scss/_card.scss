@@ -1,0 +1,29 @@
+.card {
+    background-color: $lightyellow;
+    font-family: $roboto;
+
+    .card-header {
+        background-color: $yellow;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+
+        p {
+            margin: 0px;
+            font-size: 13px;
+        }
+
+        small {
+            color: $lightgrey;
+        }
+    }
+
+    .card-body {
+        padding: 5px 10px;
+
+        p {
+            margin: 0;
+        }
+    }
+}
