@@ -1,0 +1,33 @@
+.inspire {
+    padding: 20px;
+
+    &-box {
+        border: $border;
+        display: flex;
+
+    }
+
+    &-left {
+        min-height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &-right {
+
+        .header-white {
+            font-family: $marker;
+            color: white;
+            font-weight: 400;
+        }
+
+        p {
+            font-family: $roboto;
+            color: $yellow;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

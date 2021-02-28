@@ -639,3 +639,36 @@ html {
   cursor: pointer;
   font-size: 55px;
 }
+
+.inspire {
+  padding: 20px;
+}
+
+.inspire-box {
+  border: 3px solid #F7BA2D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inspire-left {
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.inspire-right .header-white {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-weight: 400;
+}
+
+.inspire-right p {
+  font-family: "Roboto", sans-serif;
+  color: #F7BA2D;
+}
+
+.inspire-right a {
+  text-decoration: none;
+}

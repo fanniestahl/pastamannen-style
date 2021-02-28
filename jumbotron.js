@@ -17,7 +17,6 @@ if(btnLeft){
 }
 
 if(btnRight){
-
     btnRight.addEventListener('click', ()=> slide(1));
 }
 
