@@ -1,42 +1,38 @@
 .meny {
-    margin: $mediumpadding;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: $mediumpadding;
+    &-brand {
+        color: $lightyellow;
+        font-family: $marker;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
 
-    &-item {
-        border: 2px solid $yellow;
-        padding: $smallpadding;
-        border-radius: 3px;
+    &-group-title {
+        color: $lightyellow;
+        text-decoration: underline;
+        font-family: $marker;
+        font-weight: 400;
+        margin: 0px;
+    }
 
-        &-dish {
-            font-family: $marker;
+    &-dish {
+        &-name {
             color: $yellow;
-            margin: 0;
-            padding: 0;
+            font-family: $marker;
             font-weight: 400;
-        }
-
-        &-category {
-            color: darken($lightyellow, 0.7);
-            font-family: $roboto;
-            font-style: italic;
+            margin: 0px;
         }
 
         &-description {
             color: $lightyellow;
-            line-height: 1.5rem;
             font-family: $roboto;
+            font-weight: 400;
         }
 
-        &-prices {
-            font-family: $marker;
-            text-align: center;
-            color: $yellow;
-
-            small {
-                color: $blue;
-            }
+        &-price {
+            color: $blue;
+            font-family: $roboto;
+            font-weight: 400;
         }
-    } 
+    }
 }
