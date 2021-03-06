@@ -52,3 +52,27 @@
 .mb-small {
     margin-bottom: $smallpadding;
 }
+
+.font-marker {
+    font-family: $marker;
+}
+
+.font-roboto {
+    font-family: $roboto;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-lightyellow {
+    color: $lightyellow;
+}
+
+.text-dark {
+    color: $dark;
+}
+
+.font-w400 {
+    font-weight: 400;
+}
