@@ -231,8 +231,11 @@ html {
 }
 
 .form-group label {
+  font-size: 20px;
   color: #FFFEEC;
-  padding-bottom: 3px;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
 }
 
 .form-group .form-control {
@@ -318,6 +321,30 @@ html {
   margin-bottom: 1rem;
 }
 
+.font-marker {
+  font-family: "Permanent Marker", cursive;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-yellow {
+  color: #F7BA2D;
+}
+
+.text-lightyellow {
+  color: #FFFEEC;
+}
+
+.text-dark {
+  color: #231F20;
+}
+
+.font-w400 {
+  font-weight: 400;
+}
+
 .btn {
   border-radius: 2px;
   border: none;
@@ -326,12 +353,14 @@ html {
   outline: none;
   cursor: pointer;
   font-size: 17px;
+  text-decoration: none;
 }
 
 .btn-yellow {
   background-color: #F7BA2D;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #231F20;
 }
 
 .btn-yellow:hover {
@@ -614,7 +643,7 @@ html {
 }
 
 .jumbotron-imgs img {
-  width: 100%;
+  min-width: 100%;
 }
 
 .jumbotron-btns {
@@ -671,4 +700,24 @@ html {
 
 .inspire-right a {
   text-decoration: none;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.error a {
+  padding: 5px;
 }

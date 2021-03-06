@@ -1,12 +1,14 @@
-
 .form-group {
     font-family: $roboto;
     display: flex;
     flex-direction: column;
 
     label {
+        font-size: 20px;
         color: $lightyellow;
-        padding-bottom: 3px;
+        padding: 5px;
+        float: right;
+        cursor: pointer;
     }
 
     .form-control {
