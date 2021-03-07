@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -103,6 +105,97 @@ html {
   font-family: "Permanent Marker", cursive;
   text-align: center;
   font-size: 19px;
+}
+
+.navbar-meny-link:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #231F20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #F7BA2D;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand p {
+  margin: 0px 1rem;
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #F7BA2D;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar-menu {
+  line-height: 0.225;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-menu p {
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar-menu:hover {
+  text-decoration: none !important;
+  color: #b78207 !important;
+}
+
+.navbar-meny {
+  width: 300px;
+  border: 3px solid #F7BA2D;
+  display: -ms-grid;
+  display: grid;
+  background-color: #231F20;
+  gap: 2rem;
+  padding: 2rem;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+
+.navbar-meny-link {
+  text-decoration: none;
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
 }
 
 .navbar-meny-link:hover {
@@ -594,6 +687,1005 @@ form .form-star .star-widget input:checked ~ label {
 
 .meny-item-prices small {
   color: #00FFFF;
+}
+
+.meny-brand {
+  color: #FFFEEC;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.meny-group-title {
+  color: #FFFEEC;
+  text-decoration: underline;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.meny-dish-name {
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.meny-dish-description {
+  color: #FFFEEC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.meny-dish-price {
+  color: #00FFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1550px) {
+  .meny {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .meny {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .meny {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .header {
+    font-size: 25px;
+    text-align: center;
+  }
+  .container {
+    width: 100% !important;
+    padding: 0px 1rem;
+  }
+  .navbar p {
+    font-size: 25px;
+  }
+  .instagram-imgs {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .instagram img {
+    width: 150px;
+  }
+  .info {
+    padding: 1rem;
+  }
+  .info-imgs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-imgs img {
+    width: 200px;
+    height: 200px;
+  }
+  .landing {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .landing-item {
+    width: initial;
+  }
+  .g-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-info {
+    margin-bottom: 1rem;
+  }
+  .inspire-left {
+    width: 300px;
+  }
+}
+
+@media (max-width: 580px) {
+  .meny {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.jumbotron {
+  overflow: hidden;
+  position: relative;
+}
+
+.jumbotron-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.jumbotron-imgs img {
+  min-width: 100%;
+}
+
+.jumbotron-btns {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jumbotron-btns button {
+  background-color: transparent;
+  border: none;
+  font-family: "Permanent Marker", cursive;
+  outline: none;
+  cursor: pointer;
+  font-size: 55px;
+}
+
+.inspire {
+  padding: 20px;
+}
+
+.inspire h1 {
+  text-align: center;
+}
+
+.inspire p {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.inspire-box {
+  border: 3px solid #F7BA2D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 400px;
+}
+
+.inspire-left {
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.inspire-right {
+  padding: 5px;
+  text-align: left;
+}
+
+.inspire-right h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.inspire-right p {
+  font-family: "Roboto", sans-serif;
+  color: #F7BA2D;
+}
+
+.inspire-right a {
+  text-decoration: none;
+  color: #F7BA2D;
+  text-align: right;
+}
+
+.container .post {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.container .post .createdby {
+  padding-bottom: 1rem;
+}
+
+.container .post .createdby h1 {
+  margin-bottom: 0;
+}
+
+.container .post .createdby small {
+  font-family: "Roboto", sans-serif;
+}
+
+.container .post .createdby p {
+  font-size: 12px;
+  color: lightgray;
+}
+
+.container p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container label {
+  text-align: left;
+}
+
+.container .comments {
+  padding-bottom: 2rem;
+}
+
+.container .comments h2 {
+  text-align: center;
+}
+
+.container .comments input[type="submit"] {
+  padding: 5px;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.error a {
+  padding: 5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #231F20;
+}
+
+.no-border {
+  border: 0px !important;
+}
+
+.navbar {
+  background-color: #231F20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #F7BA2D;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand p {
+  margin: 0px 1rem;
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #F7BA2D;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar-menu {
+  line-height: 0.225;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-menu p {
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar-menu:hover {
+  text-decoration: none !important;
+  color: #b78207 !important;
+}
+
+.navbar-meny {
+  width: 300px;
+  border: 3px solid #F7BA2D;
+  display: -ms-grid;
+  display: grid;
+  background-color: #231F20;
+  gap: 2rem;
+  padding: 2rem;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  border-top: none;
+}
+
+.navbar-meny-link {
+  text-decoration: none;
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-size: 19px;
+}
+
+.navbar-meny-link:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #231F20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #F7BA2D;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand p {
+  margin: 0px 1rem;
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #F7BA2D;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar-menu {
+  line-height: 0.225;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-menu p {
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  font-size: 35px;
+}
+
+.navbar-menu:hover {
+  text-decoration: none !important;
+  color: #b78207 !important;
+}
+
+.navbar-meny {
+  width: 300px;
+  border: 3px solid #F7BA2D;
+  display: -ms-grid;
+  display: grid;
+  background-color: #231F20;
+  gap: 2rem;
+  padding: 2rem;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+
+.navbar-meny-link {
+  text-decoration: none;
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+
+.navbar-meny-link:hover {
+  text-decoration: underline;
+}
+
+.instagram {
+  background-color: #231F20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.instagram-imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1rem;
+}
+
+.instagram img {
+  width: 200px;
+}
+
+.info {
+  background-color: #FFFEEC;
+  text-align: center;
+  padding: 1rem 25%;
+}
+
+.info h1 {
+  margin: 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+}
+
+.info p {
+  font-family: "Roboto", sans-serif;
+}
+
+.info-dark {
+  background-color: #231F20;
+  border-bottom: 3px solid #F7BA2D;
+}
+
+.info-dark h1 {
+  color: #F7BA2D;
+}
+
+.info-dark p {
+  color: #FFFEEC;
+}
+
+.info-dark .info-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-dark .info-imgs img {
+  padding: 1rem;
+  width: 200px;
+}
+
+.info-dark:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.footer {
+  border-top: 3px solid #F7BA2D;
+  background-color: #231F20;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.footer .footer-info h3 {
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer .footer-info p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #FFFEEC;
+}
+
+.footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+
+.footer .socialmedia .icons {
+  color: #F7BA2D;
+  font-size: 2rem;
+  padding: 2px;
+}
+
+form .form-group {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .form-group label {
+  color: #FFFEEC;
+  padding-bottom: 3px;
+}
+
+form .form-group .form-control {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #FFFEEC;
+  height: 25px;
+  padding: 3px;
+}
+
+form .form-group textarea.form-control {
+  height: 80px;
+  resize: vertical;
+  max-height: 250px;
+}
+
+form .form-group small {
+  color: red;
+  padding-top: 5px;
+}
+
+form .form-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .form-star input[type="submit"] {
+  height: 40px;
+}
+
+form .form-star .star-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-star .star-widget p {
+  font-size: 18px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-right: 5px;
+}
+
+form .form-star .star-widget input {
+  display: none;
+}
+
+form .form-star .star-widget label {
+  font-size: 20px;
+  color: #FFFEEC;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+form .form-star .star-widget input:not(:checked) ~ label:hover,
+form .form-star .star-widget input:not(:checked) ~ label:hover ~ label {
+  color: #F7BA2D;
+}
+
+form .form-star .star-widget input:checked ~ label {
+  color: #F7BA2D;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.center {
+  text-align: center;
+}
+
+.g-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.hr-yellow {
+  border: none;
+  background-color: #F7BA2D;
+  height: 1px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.header {
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+}
+
+.subheader {
+  color: #FFFEEC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.expand {
+  grid-column: 1/-1;
+  border-top: none;
+}
+
+.mb-small {
+  margin-bottom: 1rem;
+}
+
+.p-small {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.font-marker {
+  font-family: "Permanent Marker", cursive;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-yellow {
+  color: #F7BA2D;
+}
+
+.text-lightyellow {
+  color: #FFFEEC;
+}
+
+.text-dark {
+  color: #231F20;
+}
+
+.font-w400 {
+  font-weight: 400;
+}
+
+.header-white {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-weight: 400;
+}
+
+.btn {
+  border-radius: 2px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  padding: 2px 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.btn-yellow {
+  background-color: #F7BA2D;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #231F20;
+}
+
+.btn-yellow:hover {
+  background-color: #b78207;
+}
+
+.card {
+  background-color: #FFFEEC;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.card .card-header {
+  background-color: #F7BA2D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.card .card-header p {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.card .card-header small {
+  color: #373737;
+}
+
+.card .card-body {
+  margin: 5px 10px;
+  padding-bottom: 5px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.card .card-body p {
+  margin: 0;
+  color: #231F20;
+}
+
+.landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.landing .landing-item {
+  width: 100%;
+  background-color: #373737;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  border: 3px solid #F7BA2D;
+}
+
+.landing .landing-item .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .landing-item .overlay img {
+  width: 200px;
+  height: 200px;
+  margin-top: auto;
+}
+
+.landing .landing-item .overlay .btn {
+  font-family: "Permanent Marker", cursive;
+  max-height: 30px;
+  border-radius: 3px;
+  padding: 5px 40px;
+  margin: 2rem;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.contact img {
+  width: 400px;
+  height: 400px;
+}
+
+.contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact .contact-info .contact-info-group {
+  width: 200px;
+}
+
+.contact .contact-info .contact-info-group h3 {
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.contact .contact-info .contact-info-group p {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  color: #FFFEEC;
+}
+
+.meny {
+  margin: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.meny-item {
+  border: 2px solid #F7BA2D;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.meny-item-dish {
+  font-family: "Permanent Marker", cursive;
+  color: #F7BA2D;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.meny-item-category {
+  color: #fffee8;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.meny-item-description {
+  color: #FFFEEC;
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.meny-item-prices {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: #F7BA2D;
+}
+
+.meny-item-prices small {
+  color: #00FFFF;
+}
+
+.meny-brand {
+  color: #FFFEEC;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.meny-group-title {
+  color: #FFFEEC;
+  text-decoration: underline;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.meny-dish-name {
+  color: #F7BA2D;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.meny-dish-description {
+  color: #FFFEEC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.meny-dish-price {
+  color: #00FFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 1550px) {

@@ -38,5 +38,44 @@
                 color: $blue;
             }
         }
-    } 
+    }
+}
+
+.meny {
+    &-brand {
+        color: $lightyellow;
+        font-family: $marker;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    &-group-title {
+        color: $lightyellow;
+        text-decoration: underline;
+        font-family: $marker;
+        font-weight: 400;
+        margin: 0px;
+    }
+
+    &-dish {
+        &-name {
+            color: $yellow;
+            font-family: $marker;
+            font-weight: 400;
+            margin: 0px;
+        }
+
+        &-description {
+            color: $lightyellow;
+            font-family: $roboto;
+            font-weight: 400;
+        }
+
+        &-price {
+            color: $blue;
+            font-family: $roboto;
+            font-weight: 400;
+        }
+    }
 }

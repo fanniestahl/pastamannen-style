@@ -35,3 +35,40 @@ html {
 @import "jumbotron";
 @import "inspire";
 @import "error";
+@import "config";
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: $dark;
+}
+
+.no-border {
+    border: 0px !important;
+}
+
+// .no-border-right {
+// border-right: 0px !important;
+// }
+
+
+@import "navbar";
+@import "instagram";
+@import "info";
+@import "footer";
+@import "forms";
+@import "utilities";
+@import "buttons";
+@import "card";
+@import "landing";
+@import "contact";
+@import "meny";
+@import "responsive";
+@import "jumbotron";
+@import "inspire";
+@import "error";
