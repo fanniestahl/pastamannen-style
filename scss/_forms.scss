@@ -1,44 +1,77 @@
-.form-group {
-    font-family: $roboto;
-    display: flex;
-    flex-direction: column;
+form {
+    .form-group {
+        font-family: $roboto;
+        display: flex;
+        flex-direction: column;
 
-    label {
-        font-size: 20px;
-        color: $lightyellow;
-        padding: 5px;
-        float: right;
-        cursor: pointer;
+        label {
+            color: $lightyellow;
+            padding-bottom: 3px;
+        }
+
+        .form-control {
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            background-color: $lightyellow;
+            height: 25px;
+            padding: 3px;
+
+        }
+
+        textarea.form-control {
+            height: 80px;
+            resize: vertical;
+            max-height: 250px;
+        }
+
+        small {
+            color: red;
+            padding-top: 5px;
+        }
+
     }
 
-    .form-control {
-        border-radius: 3px;
-        border: none;
-        outline: none;
-        background-color: $lightyellow;
-        height: 25px;
-        padding: 3px;
+    .form-star {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    }
+        input[type="submit"] {
+            height: 40px;
+        }
 
-    textarea.form-control {
-        height: 80px;
-        resize: vertical;
-        max-height: 250px;
-    }
+        .star-widget {
+            display: flex;
+            align-items: center;
 
-    small {
-        color: red;
-        padding-top: 5px;
-    }
+            p {
+                font-size: 18px;
+                color: white;
+                font-family: $roboto;
+                margin-right: 5px;
+            }
 
-}
+            input {
+                display: none;
+            }
 
+            label {
+                font-size: 20px;
+                color: $lightyellow;
+                padding: 5px;
+                float: right;
+                cursor: pointer;
+            }
 
-.stars-form {
-    background-color: $lightyellow;
+            input:not(:checked)~label:hover,
+            input:not(:checked)~label:hover~label {
+                color: $yellow;
+            }
 
-    &:hover {
-        background-color: $yellow;
+            input:checked~label {
+                color: $yellow;
+            }
+        }
     }
 }

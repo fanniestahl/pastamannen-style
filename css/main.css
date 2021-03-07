@@ -91,6 +91,10 @@ html {
   background-color: #231F20;
   gap: 2rem;
   padding: 2rem;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  border-top: none;
 }
 
 .navbar-meny-link {
@@ -98,6 +102,7 @@ html {
   color: #F7BA2D;
   font-family: "Permanent Marker", cursive;
   text-align: center;
+  font-size: 19px;
 }
 
 .navbar-meny-link:hover {
@@ -219,7 +224,7 @@ html {
   padding: 2px;
 }
 
-.form-group {
+form .form-group {
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,15 +235,12 @@ html {
           flex-direction: column;
 }
 
-.form-group label {
-  font-size: 20px;
+form .form-group label {
   color: #FFFEEC;
-  padding: 5px;
-  float: right;
-  cursor: pointer;
+  padding-bottom: 3px;
 }
 
-.form-group .form-control {
+form .form-group .form-control {
   border-radius: 3px;
   border: none;
   outline: none;
@@ -247,23 +249,68 @@ html {
   padding: 3px;
 }
 
-.form-group textarea.form-control {
+form .form-group textarea.form-control {
   height: 80px;
   resize: vertical;
   max-height: 250px;
 }
 
-.form-group small {
+form .form-group small {
   color: red;
   padding-top: 5px;
 }
 
-.stars-form {
-  background-color: #FFFEEC;
+form .form-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.stars-form:hover {
-  background-color: #F7BA2D;
+form .form-star input[type="submit"] {
+  height: 40px;
+}
+
+form .form-star .star-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-star .star-widget p {
+  font-size: 18px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-right: 5px;
+}
+
+form .form-star .star-widget input {
+  display: none;
+}
+
+form .form-star .star-widget label {
+  font-size: 20px;
+  color: #FFFEEC;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+form .form-star .star-widget input:not(:checked) ~ label:hover,
+form .form-star .star-widget input:not(:checked) ~ label:hover ~ label {
+  color: #F7BA2D;
+}
+
+form .form-star .star-widget input:checked ~ label {
+  color: #F7BA2D;
 }
 
 .container {
@@ -292,14 +339,6 @@ html {
   margin-top: 2rem;
 }
 
-.stars .star-filled {
-  background-color: #F7BA2D;
-}
-
-.stars .star {
-  border: 1px solid #F7BA2D;
-}
-
 .header {
   color: #F7BA2D;
   font-family: "Permanent Marker", cursive;
@@ -319,6 +358,14 @@ html {
 
 .mb-small {
   margin-bottom: 1rem;
+}
+
+.p-small {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .font-marker {
@@ -342,6 +389,12 @@ html {
 }
 
 .font-w400 {
+  font-weight: 400;
+}
+
+.header-white {
+  font-family: "Permanent Marker", cursive;
+  color: white;
   font-weight: 400;
 }
 
@@ -397,11 +450,15 @@ html {
 }
 
 .card .card-body {
-  padding: 5px 10px;
+  margin: 5px 10px;
+  padding-bottom: 5px;
+  display: -ms-grid;
+  display: grid;
 }
 
 .card .card-body p {
   margin: 0;
+  color: #231F20;
 }
 
 .landing {
@@ -451,13 +508,10 @@ html {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -470,14 +524,13 @@ html {
 }
 
 .contact .contact-info {
-  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -616,6 +669,9 @@ html {
   .footer .footer-info {
     margin-bottom: 1rem;
   }
+  .inspire-left {
+    width: 300px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -673,11 +729,22 @@ html {
   padding: 20px;
 }
 
+.inspire h1 {
+  text-align: center;
+}
+
+.inspire p {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
 .inspire-box {
   border: 3px solid #F7BA2D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 400px;
 }
 
 .inspire-left {
@@ -687,10 +754,14 @@ html {
   width: 100%;
 }
 
-.inspire-right .header-white {
-  font-family: "Permanent Marker", cursive;
-  color: white;
-  font-weight: 400;
+.inspire-right {
+  padding: 5px;
+  text-align: left;
+}
+
+.inspire-right h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .inspire-right p {
@@ -700,6 +771,51 @@ html {
 
 .inspire-right a {
   text-decoration: none;
+  color: #F7BA2D;
+  text-align: right;
+}
+
+.container .post {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.container .post .createdby {
+  padding-bottom: 1rem;
+}
+
+.container .post .createdby h1 {
+  margin-bottom: 0;
+}
+
+.container .post .createdby small {
+  font-family: "Roboto", sans-serif;
+}
+
+.container .post .createdby p {
+  font-size: 12px;
+  color: lightgray;
+}
+
+.container p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container label {
+  text-align: left;
+}
+
+.container .comments {
+  padding-bottom: 2rem;
+}
+
+.container .comments h2 {
+  text-align: center;
+}
+
+.container .comments input[type="submit"] {
+  padding: 5px;
 }
 
 .error {

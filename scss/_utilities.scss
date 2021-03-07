@@ -22,16 +22,6 @@
     margin-top: $mediumpadding;
 }
 
-.stars {
-    .star-filled {
-        background-color: $yellow;
-    }
-
-    .star {
-        border: 1px solid $yellow;
-    }
-}
-
 .header {
     color: $yellow;
     font-family: $marker;
@@ -51,6 +41,14 @@
 
 .mb-small {
     margin-bottom: $smallpadding;
+}
+
+.p-small {
+    padding: $smallpadding;
+}
+
+.hidden {
+    display: none;
 }
 
 .font-marker {
@@ -74,5 +72,11 @@
 }
 
 .font-w400 {
+    font-weight: 400;
+}
+
+.header-white {
+    font-family: $marker;
+    color: white;
     font-weight: 400;
 }

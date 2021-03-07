@@ -1,9 +1,20 @@
 .inspire {
     padding: 20px;
 
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        font-family: $roboto;
+    }
+
     &-box {
         border: $border;
         display: flex;
+        max-height: 400px;
 
     }
 
@@ -14,11 +25,12 @@
     }
 
     &-right {
+        padding: 5px;
+        text-align: left;
 
-        .header-white {
-            font-family: $marker;
-            color: white;
-            font-weight: 400;
+        h3 {
+            margin: 0;
+            padding: 0;
         }
 
         p {
@@ -28,6 +40,53 @@
 
         a {
             text-decoration: none;
+            color: $yellow;
+            text-align: right;
+        }
+    }
+}
+
+.container {
+    .post {
+        text-align: center;
+        padding-bottom: $mediumpadding;
+
+        .createdby {
+            padding-bottom: $smallpadding;
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            small {
+                font-family: $roboto;
+            }
+
+            p {
+                font-size: 12px;
+                color: lightgray;
+            }
+        }
+    }
+
+    p {
+        color: white;
+        font-family: $roboto;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    .comments {
+        padding-bottom: $mediumpadding;
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            padding: 5px;
         }
     }
 }
